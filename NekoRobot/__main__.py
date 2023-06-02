@@ -120,8 +120,9 @@ NEKO_STICKERS = (
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/6e47709921b846de0e8e0.png) 」────
+────「 [{}]」────
 *Ram Ram ji ! {},*
+
 *First add me in your group to see my power bhaya 🗿!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
