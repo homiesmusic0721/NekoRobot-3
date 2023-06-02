@@ -71,7 +71,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                f""Ram Ram Bhaya 🗿 Homies Chatbot enable by {mention_html(user.id, user.first_name)}.",
+                f"Ram Ram Bhaya 🗿 Homies Chatbot enable by {mention_html(user.id, user.first_name)}.",
                 parse_mode=ParseMode.HTML,
             )
 
