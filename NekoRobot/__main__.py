@@ -112,17 +112,17 @@ HELP_MSG = "Click The Button Below To Get Help Menu In Your Dm."
 START_MSG = "I'm Awake Already!\n<b>Haven't Slept Since:</b> <code>{}</code>"
 
 NEKO_STICKERS = (
-    "CAACAgUAAxkBAAIIW2NL5v9F9hUom4xmsgNYb63SEfZZAAIZBgACYAF5VIerYoMcSln8KgQ",
-    "CAACAgUAAxkBAAIIT2NL5tVmdAO3n1o3cp9Jic9LkqJvAAK7AgACoU3RVLpdwYfQPmS9KgQ",
-    "CAACAgUAAxkBAAIIUGNL5tVNd0rwdoMv-uDVcZ3hHgwlAAIwAwACP9jQVMv2AfU-DvBfKgQ",
-    "CAACAgUAAxkBAAIIUmNL5tUzCtvS5E-XR8h3tFMSqVu7AAIGAwACNZnYVOTUhlBiHTQGKgQ",
-    "CAACAgUAAxkBAAIIUWNL5tVBEQAB2gWLSq0ymEPeAj5kmQAC3QEAAuu92VSPj3UkCiNvfioE",
+    "CAACAgUAAxkBAAEJL8xkedaNPS6pxx8So7_uMCG-3G9HxwACxwIAAkEkkVdiHQKI09KySC8E",
+    "CAACAgUAAxkBAAEJL85keda-vYKJo3eqjEfpiu5d6Y1sQQACywMAAmyd2VaISdEAAVMqeMMvBA",
+    "CAACAgUAAxkBAAEJL9Bkedbzk2jKiHMdXLyKEaQqCaUUMgACLAUAAuzs2VYhH0LjD7S1pS8E",
+    "CAACAgUAAxkBAAEJL9JkedcqniewzE5YflW48IGenX3f-AACWQMAAqJ4eVQb7m_4qHG13C8E",
+    "CAACAgUAAxkBAAEJL9Rkeddy2PGcQfRz5fMVXFPLlSc9UQACrgMAAslo2VbKrkd6yXdMhS8E",
 )
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/9996ec2eafdef4692102d.jpg) 」────
-*Hola! {},*
-*Meow Meow, Don't Touch Me Without My Permission!*
+────「 [{}](https://telegra.ph/file/6e47709921b846de0e8e0.png) 」────
+*Ram Ram ji ! {},*
+*First add me in your group to see my power bhaya 🗿!*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ❍ *Uptime:* `{}`
 ❍ `{}` *Users, Across* `{}` *Chats.*
@@ -138,9 +138,9 @@ buttons = [
         )
     ],
     [
-        InlineKeyboardButton(text="📓 Guidelines", callback_data="help_back"),
+        InlineKeyboardButton(text="🤝 Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="Source 🌐", url="https://github.com/Awesome-Prince/NekoRobot-3.git"
+            text="Source 🌐", url="https://telegra.ph/file/6b0d08608b044e18f9a77.png"
         ),
     ],
     [
@@ -148,7 +148,7 @@ buttons = [
             text="🚑 Support", url=f"https://telegram.dog/{SUPPORT_CHAT}"
         ),
         InlineKeyboardButton(
-            text="📢 Updates", url="https://telegram.dog/Programmer_Updates"
+            text="📢 Updates", url="https://t.me/real_homie"
         ),
     ],
 ]
@@ -164,11 +164,11 @@ HELP_STRINGS = """
 """
 
 GROUP_START_IMG = (
-    "https://te.legra.ph/file/5f272dc498e4cf91faf92.jpg",
-    "https://te.legra.ph/file/9d8190aba9ac3421af488.jpg",
-    "https://te.legra.ph/file/5b1ce336f0c0216224040.jpg",
-    "https://te.legra.ph/file/f1f67047d973f3aea4004.jpg",
-    "https://te.legra.ph/file/c2526c05d65fd2fbfa58b.jpg",
+    "https://telegra.ph/file/cb41a561d36feb6bc4c94.png",
+    "https://telegra.ph/file/b6cec5a4662783a920530.png",
+    "https://telegra.ph/file/9d86bf8cecc5db899c142.png",
+    "https://telegra.ph/file/b93b159a3e830f6147a99.png",
+    "https://telegra.ph/file/61272ed90ff5229fd5dab.png",
 )
 
 DONATE_STRING = """❂ I'm Free for Everyone ❂"""
@@ -302,7 +302,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_photo(
             random.choice(GROUP_START_IMG),
-            caption=f"<b>Yes, Master I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
+            caption=f"<b>Yes, Bhaya I'm alive!\nHaven't sleep since</b>: <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -313,7 +313,7 @@ def start(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="📢 Updates",
-                            url="https://telegram.dog/Programmer_Updates",
+                            url="https://t.me/real_homie",
                         ),
                     ]
                 ]
@@ -677,7 +677,7 @@ def donate(update: Update, context: CallbackContext) -> None:
                         [
                             InlineKeyboardButton(
                                 text="📢 Updates",
-                                url="https://telegram.dog/Programmer_Updates",
+                                url="https://t.me/real_homie",
                             ),
                             InlineKeyboardButton(
                                 text="🚑 Support",
