@@ -37,13 +37,13 @@ from NekoRobot import tbot as neko
 from NekoRobot.events import register
 
 edit_time = 5
-""" =======================Neko====================== """
-file1 = "https://telegra.ph/file/cd7aad1ea310312886358.png"
-file2 = "https://telegra.ph/file/48a97320463caa61dba3d.png"
-file3 = "https://telegra.ph/file/2295a7207495eccbbe298.png"
-file4 = "https://telegra.ph/file/67e0bf231a97cd2e364ea.png"
-file5 = "https://telegra.ph/file/990684ecd3d119fa9fec6.png"
-""" =======================Neko====================== """
+""" =======================Homies mangement====================== """
+file1 = "https://telegra.ph/file/b93b159a3e830f6147a99.png"
+file2 = "https://telegra.ph/file/cb41a561d36feb6bc4c94.png"
+file3 = "https://telegra.ph/file/b6cec5a4662783a920530.png"
+file4 = "https://telegra.ph/file/4b5c413aa5b896c6c7c94.png"
+file5 = "https://telegra.ph/file/1897d6efd1a843f122aed.png"
+""" =======================Homies mangement====================== """
 
 START_TIME = datetime.utcnow()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
@@ -73,12 +73,12 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    NekoX = f"** ♡ Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
+    NekoX = f"** ♡ Ram Ram ji 🙏 [{yes.sender.first_name}](tg://user?id={yes.sender.id}) I'm {BOT_NAME} **\n\n"
     NekoX += f"**♡ My Uptime :** `{uptime}`\n\n"
     NekoX += f"**♡ Python-telegram-bot Version :** `{ptb}`\n\n"
     NekoX += f"**♡ Telethon Version :** `{tlhver}`\n\n"
     NekoX += f"**♡ Pyrogram Version :** `{pyrover}`\n\n"
-    NekoX += "**♡ My Master :** [LovelyPrince](https://t.me/Its_IZ_PRINCE_xD) "
+    NekoX += "**♡ My Father 🗿❤️ :** [शशांक 🇮🇳](https://t.me/venomofwrite) "
     NekoX += f"Thanks For Adding Me In {yes.chat.title}"
     BUTTON = [
         [
